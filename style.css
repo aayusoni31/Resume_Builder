@@ -1,0 +1,62 @@
+/* Custom styles to enhance the UI */
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f8fafc; /* slate-50 */
+}
+
+/* Custom scrollbar for a cleaner look */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9; /* slate-100 */
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1; /* slate-300 */
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8; /* slate-400 */
+}
+
+/* Smooth transitions for a better UX */
+.form-section,
+.resume-section {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Styling for the resume preview templates */
+#resume-preview.template-modern {
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+#resume-preview.template-classic {
+  font-family: "Times New Roman", Times, serif;
+  border: 2px solid #1e293b; /* slate-800 */
+  padding: 2.5rem;
+}
+#resume-preview.template-classic h2 {
+  border-bottom: 2px solid #1e293b;
+  padding-bottom: 0.5rem;
+  margin-top: 1rem;
+}
+#resume-preview.template-creative {
+  background-color: #f0f9ff; /* sky-50 */
+  border-left: 5px solid #0ea5e9; /* sky-500 */
+}
+#resume-preview.template-creative #resume-header {
+  background-color: #0ea5e9;
+  color: white;
+  padding: 1.5rem;
+  margin: -1.5rem -1.5rem 1rem -2rem;
+}
+
+/* Animation for loading spinner */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
